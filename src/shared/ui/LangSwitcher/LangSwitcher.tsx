@@ -11,7 +11,8 @@ interface LangSwitcherProps{
 export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     const { t, i18n } = useTranslation();
 
-    const changeLang = () => i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+    const changeLang = () => i18n
+        .changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
 
     return (
         <div>
