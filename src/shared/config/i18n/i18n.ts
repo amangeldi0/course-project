@@ -14,8 +14,7 @@ i18n
 
         interpolation: {
             escapeValue: __IS_DEV__,
-        }
+        },
     });
-
 
 export default i18n;
