@@ -1,5 +1,8 @@
+// @ts-ignore
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+// @ts-ignore
 import webpack from 'webpack';
+// @ts-ignore
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
@@ -7,7 +10,7 @@ import { BuildOptions } from './types/config';
 export const buildPlugins = (
     { paths, isDev }: BuildOptions,
 ): webpack.WebpackPluginInstance[] => {
-    const plugins: webpack.WebpackPluginInstance[] = [
+    const plugins = [
         new HtmlWebpackPlugin({
             template: paths.html,
         }),
