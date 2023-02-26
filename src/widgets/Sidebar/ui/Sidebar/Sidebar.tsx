@@ -21,13 +21,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
             )}
             data-testid="sidebar"
         >
-            <button
-                type="button"
-                data-testid="sidebar-toggle"
-                onClick={() => setCollapsed((prevState) => !prevState)}
-            >
-                toogle
-            </button>
+            {/* <button */}
+            {/*    type="button" */}
+            {/*    data-testid="sidebar-toggle" */}
+            {/*    onClick={() => setCollapsed((prevState) => !prevState)} */}
+            {/* > */}
+            {/*    toogle */}
+            {/* </button> */}
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher />
